@@ -2,13 +2,14 @@
 
   <head>
     <title>Angular 2 QuickStart</title>
+    <base href="/">
 
     <!-- 1. Load libraries -->
     <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
-
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
     <!-- 2. Configure SystemJS -->
     <script>
       System.config({
@@ -22,7 +23,7 @@
       System.import('app/boot')
             .then(null, console.error.bind(console));
     </script>
-
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <!-- 3. Display the application -->
